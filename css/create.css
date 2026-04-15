@@ -1,0 +1,93 @@
+/*create account -> all style information and a specific id to hide the div with js. */
+
+div#popup {
+    display: none;
+    position: fixed;
+    left: 0;
+    top: 0;
+    overflow: auto;
+    width: 100%;
+    height: 100%;
+    background-color:rgba(138, 138, 138, 0.5);
+}
+
+div#popupdesinger {
+    display: flex; 
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center; 
+    
+    background-color: rgb(255, 255, 255); 
+    margin: auto;
+    margin-top: 10%;
+
+    width: 50%;
+    height: 50%;
+
+    border-radius: 10px; 
+    box-shadow: 0 0 10px rgb(127, 173, 216);
+}
+
+div#buttonspopuptop {
+    height: 20%;
+    width: 100%;
+    background: linear-gradient(to top, rgba(250, 250, 250, 0.5), rgba(0, 194, 228, 0.5));
+    display: flex;
+    justify-content: space-between;
+}
+
+button#closebutton {
+    width: 10%;
+    font-size: 3vh;
+}
+div#buttonspopuptop > p {
+    padding-left: 7%;
+}
+
+
+
+div#buttonspopupdown {
+    height: 20%;
+    width: 100%;
+    background: linear-gradient(to bottom, rgba(250, 250, 250, 0.5), rgba(0, 194, 228, 0.5));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+button#Creatbutton {
+    font-size: 3vh;
+}
+
+div#creatorpopup {
+    height: 80%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+ol#ol_popup{
+    width: 100%;
+}
+li.li_popup{
+    list-style: none;
+    font-size: 4vh;
+    margin: 3%;
+}
+
+
+
+input.input_popup {
+    width: 100%; 
+    height: 40px; 
+    padding: 10px; 
+    border: 1px solid #ccc; 
+    background-color: rgb(236, 127, 255);
+    border-radius: 10px; 
+    box-sizing: border-box; 
+    text-align: center;
+}
+
+.hidden{
+    display: none;
+}

@@ -1,0 +1,117 @@
+/*this part is the whole style of pup logging and its buttons*/
+div#popup_loggin {
+    display: none;
+    position: fixed;
+    left: 0;
+    top: 0;
+    overflow: auto;
+    width: 100%;
+    height: 100%;
+    background-color:rgba(138, 138, 138, 0.5);
+    
+}
+
+div#popup_loggin_designer {
+    height: 70%;
+    width: 40%;
+
+    border-radius: 10%;
+    box-shadow: 0px 0px 10px white;
+
+    margin: auto;
+    margin-top: 5%;
+
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    background-image: radial-gradient(circle,  rgb(19, 1, 19), rgb(94, 27, 94));
+
+
+}
+
+div#top_loggin {
+    height: 12%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+div#mid_loggin {
+    height: 75%;
+    width: 100%;
+
+}
+
+div#button_loggin {
+    height: 13%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+button#loggin_close{
+    width: 10%;
+    font-size: 3vh;
+}
+
+button#access_log{
+    height: 90%;
+    border-radius: 20%;
+}
+
+ol#ol_logging{
+    width: 90%;
+    
+}
+li.li_logging{
+    list-style: none;
+    font-size: 5vh;
+    margin: auto;
+    margin-top: 10%;
+}
+
+
+
+input.input_logging {
+    width: 100%; 
+    height: 60px; 
+    padding: 10px; 
+    border: 1px solid #009cda; 
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px; 
+    box-sizing: border-box; 
+    text-align: center;
+}
+
+p#info_logging {
+    text-align: center;
+    font-size: 2vh;
+}
+
+/*here and all the style after accessing the login.
+ hiding some divs and reappearing other divs.
+ it´ll be used later with js.
+ */
+
+@keyframes animateBg {
+    0% { background-position: 0% 0%; }
+    100% { background-position: 150% 0%; }
+}
+
+div#afterloggin {
+    display: none;
+    margin: 3%;
+    width: 100%;
+    height: 10%;
+    align-items: center;
+    justify-content: space-evenly;
+
+    background: linear-gradient(to left,rgb(236, 1, 201),rgb(1, 72, 92),rgb(236,1,201));
+    background-size: 300% 100%;
+    animation: animateBg 10s linear infinite;
+}
+
+
+
+

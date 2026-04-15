@@ -1,0 +1,156 @@
+body{
+    margin: 0%;
+    padding: 0%;
+}
+/*the main div will have the definitions of the entire display */
+div#main {
+    border: 1px solid black;
+    background-image: url("../assets/img/2773756.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media (max-width: 1080px) {
+    #main {
+        flex-direction: column;
+        width: 100%;
+        height: 150vh;
+    }
+}
+
+@media (min-width: 920px) {
+    #main {
+        flex-direction: row;
+        width: 100%;
+        height: 120vh;
+    }
+}
+
+
+div#top {
+    width: 90%;
+    height: 15%;
+    margin: 2%;
+    background-image: url('../assets/img/d1b2179f4157616b1809e4a92a9ba20e.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+div#mid {
+    width: 80%;
+    height: 60%;
+    margin-bottom: 2%;
+    background-image: url('../assets/img/astronalt.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/*iframe can only be accessed after login*/
+iframe {
+    width: 70%;
+    height: 55vh;
+    display:none;
+    overflow: hidden;
+}
+
+div#buttons{
+    width: 100%;
+    height: 10%;
+    margin: 3%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    
+}
+
+
+button.anex{
+    width: 15%;
+    height: 80%;
+    background-color: blueviolet;
+    border: 1px solid white;
+    font-size: 3vh;
+}
+
+/*animation for buttons*/
+button.anex:hover{
+    background-color: rgb(0, 0, 0);
+    color: cyan;
+    border: 2px solid snow;
+
+}
+button#starplay{
+    height: 100%;
+    font-size: 6vh;
+}
+div#floot {
+    width: 100%;
+    height: 20%;
+    background-color: rgb(22, 22, 22);
+
+    display: flex;
+    justify-content: space-around;
+}
+
+div#info_oth {
+    margin: 1%;
+    width: 20%;
+    background-image: url("../assets/img/oth_amberg.jpg");
+    background-size:contain;
+    background-repeat: no-repeat;
+}
+
+div#info_class {
+    margin: 1%;
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.info_of_class{
+    background-color: rgb(43, 170, 170,0.5);
+    margin: 1px;
+    color: rgb(96, 224, 247);
+}
+
+/* Css about the popup_info, a small text when the "user" try to "play" without login*/
+
+.pop_info {
+    position: fixed;
+    background-color: rgba(0, 255, 242, 0.5);
+    width: 100%;
+    height: 5%;
+    overflow: auto;
+    
+    left: 0;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    animation: animateinfo 2s ;
+}
+
+span#info_in_popup {
+    background-color: aliceblue;
+    width: 20%;
+    text-align: center;
+}
+
+@keyframes animateinfo {
+    0% {top: -50px;}
+    50% {top: 0;}
+    100% {top: 0;}}
+
+
+
+

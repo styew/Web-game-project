@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/loggin.css">
+    <link rel="stylesheet" href="css/create.css">
+</head>
+<body>
+    <div id="main">
+        <div id="top">1</div>
+        <div id="mid">
+            <iframe src="game/game.html" id="game_frame"></iframe>
+        </div>
+        <div id="buttons">
+            <button class="anex" id="log">login</button>
+            <button class="anex" id="startplay">play</button>
+            <button class="anex" id="Create">Create an account</button>
+        </div>
+        <div id="afterloggin">
+            <span id="name_user">Username</span>
+            <button class="anex" id="starplay">play</button>
+            <button class="anex"><a href="index.html" class="anex">Log out</a></button>
+        </div>
+        
+        <div id="floot">
+            <div id="info_oth"></div>
+            <div id="info_class">
+                <span class="info_of_class">Web-Technologies</span>
+                <span class="info_of_class">Professor:  Dieter Meiller</span>
+                <span class="info_of_class">Student: Stephan Candido Schröter</span>
+            </div>
+        </div>
+    </div>
+    <div id="popup_info_login", class="pop_info">
+        <span id="info_in_popup" >You need to log in</span>
+    </div>
+        <div id="popup_password", class="pop_info">
+        <span id="info_in_popup" >Password with 8 characters</span>
+    </div>
+    <div id="popup">
+        <div id="popupdesinger">
+            <div id="buttonspopuptop">
+                <p></p>
+                <p>Create an account</p>
+                <button id="closebutton">⛌</button>
+            </div>
+            <div id="creatorpopup">
+                <ol id="ol_popup">
+                    <li class="li_popup">
+                        <label for="name"></label><input class="input_popup" id="name" placeholder="Write an Id name">
+                    </li>
+                    <li class="li_popup">
+                        <label for="name"></label><input class="input_popup" type="email" id="email" placeholder="Write your Email">
+                    </li>
+                    <li class="li_popup">
+                        <label for="password"></label><input class="input_popup" type="password" id="password" minlength="8" placeholder="Write your passoword with min 8 letters">
+                    </li>
+                </ol>
+            </div>
+            <p id="creattext" class="hidden">created</p>
+            <div id="buttonspopupdown">
+                <button id="Creatbutton">Create</button>
+            </div>
+        </div>  
+    </div>
+    <div id="popup_loggin">
+        <div id="popup_loggin_designer">
+            <div id="top_loggin">
+                <p></p>
+                <p>Login</p>
+                <button id="loggin_close">⛌</button>
+            </div>
+            <div id="mid_loggin">
+                <ol id="ol_logging">
+                    <li class="li_logging">
+                        <label for="name"></label><input class="input_logging"  type="email" id="email_log" placeholder="Write your Email">
+                    </li>
+                    <li class="li_logging">
+                        <label for="password"></label><input class="input_logging"  type="password" id="password_log" minlength="8" placeholder="Write your passoword ">
+                    </li>
+                    <li class="li_logging"><p id="info_logging"></p></li>
+                </ol>
+            </div>
+            <div id="button_loggin">
+                <button id="access_log">Login</button>
+            </div>
+        </div>
+    </div>
+    <script src="js/script.js"></script>
+    <script src="js/loggin.js"></script>
+</body>
+</html>
